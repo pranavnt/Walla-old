@@ -1,2 +1,2 @@
 # Walla
-🦘 Walla is an intuitive JavaScript framework for building User Interfaces on the Web
+🦘 Walla is an intuitive, fast web framework for building APIs in Node
