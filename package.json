@@ -1,7 +1,7 @@
 {
-  "name": "Walla",
+  "name": "walla",
   "version": "0.1.0",
-  "description": "🦘 Walla is an intuitive JavaScript framework for building User Interfaces on the Web",
+  "description": "🦘 Walla is an intuitive, fast web framework for building APIs in Node",
   "main": "index.js",
   "repository": "https://github.com/WallaJS/Walla",
   "author": "Pranav Teegavarapu <pranavnt@outlook.com>",
