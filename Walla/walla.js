@@ -1,14 +1,14 @@
-const Router = require("./router/Router").Router;
-const http = require("http");
+const Router = require('./router/Router').Router;
+const http = require('http');
 
 class Walla {
-  constructor() {
-    this.router = new Router();
-  }
+	constructor() {
+		this.router = new Router();
+	}
 
-  get() {}
+	get() {}
 
-  post() {}
+	post() {}
 
-  put() {}
+	put() {}
 }
