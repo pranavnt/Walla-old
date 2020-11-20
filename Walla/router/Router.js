@@ -1,1 +1,1 @@
-class Router {}
+export class Router {}
