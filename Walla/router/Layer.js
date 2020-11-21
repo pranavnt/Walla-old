@@ -1,9 +1,9 @@
 /*
  * Layer Class
- * Add description
+ * Add description later
  */
 
-export class Layer {
+class Layer {
 	// constructor takes in a path and handler
 	constructor(path, fn) {
 		this.path = path;
@@ -42,3 +42,5 @@ export class Layer {
 		return false;
 	}
 }
+
+module.exports = Layer;
