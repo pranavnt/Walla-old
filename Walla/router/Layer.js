@@ -1,4 +1,10 @@
+/*
+ * Layer Class
+ * Add description
+ */
+
 export class Layer {
+	// constructor takes in a path and handler
 	constructor(path, fn) {
 		this.path = path;
 		this.name = fn.name || '<anonymous>';
@@ -16,6 +22,7 @@ export class Layer {
 		}
 	}
 
+	// handles an error
 	handleError(error, req, res, next) {
 		// handle error
 		const fn = this.handle;
@@ -27,6 +34,7 @@ export class Layer {
 		}
 	}
 
+	// matches paths
 	match(path) {
 		if (path === this.path || path === '*') {
 			return true;
