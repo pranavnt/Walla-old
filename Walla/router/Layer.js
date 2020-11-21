@@ -16,9 +16,21 @@ export class Layer {
 		}
 	}
 
-	handleError(err, req, res, next) {
+	handleError(error, req, res, next) {
 		// handle error
+		const fn = this.handle;
+
+		try {
+			fn(error, req, res, next);
+		} catch (err) {
+			next(err);
+		}
 	}
 
-	match(path) {}
+	match(path) {
+		if (path === this.path || path === '*') {
+			return true;
+		}
+		return false;
+	}
 }
