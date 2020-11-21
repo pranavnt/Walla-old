@@ -5,10 +5,4 @@ export class Walla {
 	constructor() {
 		this.router = new Router();
 	}
-
-	get() {}
-
-	post() {}
-
-	put() {}
 }

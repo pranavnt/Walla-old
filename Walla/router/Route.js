@@ -12,7 +12,13 @@ export class Route {
 		return this.methods[method.toLowerCase()];
 	}
 
-	get(fn) {}
+	get(fn) {
+		var layer = new Layer('/', fn);
+		layer.method = 'get';
+
+		this.methods['get'] = true;
+		this.stack.push(layer);
+	}
 
 	put(fn) {}
 

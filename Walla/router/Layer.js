@@ -5,10 +5,11 @@
 
 class Layer {
 	// constructor takes in a path and handler
-	constructor(path, fn) {
+	constructor(method, path, fn) {
 		this.path = path;
 		this.name = fn.name || '<anonymous>';
 		this.handle = fn;
+		this.method = method;
 	}
 
 	// handles request for layer
