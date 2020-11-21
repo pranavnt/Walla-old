@@ -16,7 +16,9 @@ export class Layer {
 		}
 	}
 
-	handleError() {
+	handleError(err, req, res, next) {
 		// handle error
 	}
+
+	match(path) {}
 }
