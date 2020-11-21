@@ -13,14 +13,23 @@ export class Route {
 	}
 
 	get(fn) {
-		var layer = new Layer('/', fn);
-		layer.method = 'get';
+		const layer = new Layer('get', '/', fn);
 
 		this.methods['get'] = true;
 		this.stack.push(layer);
 	}
 
-	put(fn) {}
+	put(fn) {
+		const layer = new Layer('put', '/', fn);
 
-	post(fn) {}
+		this.methods['put'] = true;
+		this.stack.push(layer);
+	}
+
+	post(fn) {
+		const layer = new Layer('post', '/', fn);
+
+		this.methods['post'] = true;
+		this.stack.push(layer);
+	}
 }
