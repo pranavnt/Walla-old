@@ -7,7 +7,7 @@ class Layer {
 	// constructor takes in a path and handler
 	constructor(method, path, fn) {
 		this.path = path;
-		this.name = fn.name || '<anonymous>';
+		this.name = fn.name || "<anonymous>";
 		this.handle = fn;
 		this.method = method;
 	}
@@ -37,7 +37,7 @@ class Layer {
 
 	// matches paths
 	match(path) {
-		if (path === this.path || path === '*') {
+		if (path === this.path || path === "*") {
 			return true;
 		}
 		return false;

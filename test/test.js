@@ -1,1 +1,1 @@
-const app = require('../Walla/walla').Walla;
+const app = require("../Walla/walla").Walla;
