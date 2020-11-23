@@ -17,21 +17,18 @@ export class Route {
 	}
 
 	//
-	get(fn) {
-		const layer = new Layer("get", "/", fn);
-		this.methods["get"] = true;
+	addGetMethod(fn) {
+		const layer = new Layer("GET", fn);
 		this.stack.push(layer);
 	}
 
-	put(fn) {
-		const layer = new Layer("put", "/", fn);
-		this.methods["put"] = true;
+	addPutMethod(fn) {
+		const layer = new Layer("PUT", fn);
 		this.stack.push(layer);
 	}
 
-	post(fn) {
-		const layer = new Layer("post", "/", fn);
-		this.methods["post"] = true;
+	addPostMethod(fn) {
+		const layer = new Layer("POST", fn);
 		this.stack.push(layer);
 	}
 }

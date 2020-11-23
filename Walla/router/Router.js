@@ -3,9 +3,9 @@ export class Router {
 		this.routes = [];
 	}
 
-	handleRequest() {}
+	handleRequest(method, route, fn) {}
 
-	matchRoute(route) {}
+	addRoute(method, route, fn) {}
 
-	addRoute() {}
+	isInRoutes(route) {}
 }
