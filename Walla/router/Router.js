@@ -7,5 +7,12 @@ export class Router {
 
 	addRoute(method, route, fn) {}
 
-	isInRoutes(route) {}
+	isInRoutes(route) {
+		for (var i = 0; i < this.routes.length; i++) {
+			if (this.routes[i].path == route) {
+				return true;
+			}
+		}
+		return false;
+	}
 }
