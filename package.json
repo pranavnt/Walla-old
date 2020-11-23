@@ -1,6 +1,6 @@
 {
 	"name": "walla",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "🦘 Walla is an intuitive, fast web framework for building APIs in Node",
 	"main": "index.js",
 	"repository": "https://github.com/WallaJS/Walla",

@@ -1,3 +1,9 @@
-export class Router {}
+export class Router {
+	constructor() {
+		this.routes = [];
+	}
 
-Router.prototype.handleReq = function (req, res) {};
+	handleRequest() {}
+
+	addRoute() {}
+}

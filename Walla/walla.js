@@ -6,7 +6,7 @@ export class Walla {
 		this.router = new Router();
 	}
 
-	get() {
+	get(path, fn) {
 		console.log();
 	}
 
