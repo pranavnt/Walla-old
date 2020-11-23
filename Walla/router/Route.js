@@ -4,12 +4,16 @@ export class Route {
 	constructor(path) {
 		this.path = path;
 		this.stack = [];
-		this.methods = {};
 	}
 
 	// checks whether a route can handle a specific method
 	canHandleMethod(method) {
-		return this.methods[method.toLowerCase()];
+		for (var i = 0; i < this.stack.length; i++) {
+			if (this.stack[i].method == method) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	//

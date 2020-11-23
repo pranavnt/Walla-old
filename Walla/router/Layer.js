@@ -33,5 +33,7 @@ export class Layer {
 		}
 	}
 
-	methodExists(method) {}
+	methodExists(method) {
+		return this.method == method;
+	}
 }
