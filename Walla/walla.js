@@ -1,4 +1,6 @@
 const Router = require("./router/Router").Router;
+const Route = require("./router/Route").Route;
+const Layer = require("./router/Layer").Layer;
 const http = require("http");
 
 export class Walla {
@@ -6,15 +8,16 @@ export class Walla {
 		this.router = new Router();
 	}
 
-	get(path, fn) {
+	get(route, fn) {
+		console.log();
+		if (Router.matchRoute(route))
+	}
+
+	post(route, fn) {
 		console.log();
 	}
 
-	post() {
-		console.log();
-	}
-
-	put() {
+	put(route, fn) {
 		console.log();
 	}
 

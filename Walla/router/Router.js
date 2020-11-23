@@ -5,5 +5,7 @@ export class Router {
 
 	handleRequest() {}
 
+	matchRoute(route) {}
+
 	addRoute() {}
 }

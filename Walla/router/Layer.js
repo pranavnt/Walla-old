@@ -3,9 +3,9 @@
  * Add description later
  */
 
-class Layer {
+export class Layer {
 	// constructor takes in a path and handler
-	constructor(method, path, fn) {
+	constructor(method, fn) {
 		this.handle = fn;
 		this.method = method;
 	}
@@ -35,5 +35,3 @@ class Layer {
 
 	methodExists(method) {}
 }
-
-module.exports = Layer;

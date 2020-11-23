@@ -1,4 +1,4 @@
-const Layer = require("./Layer");
+const Layer = require("./Layer").Layer;
 
 export class Route {
 	constructor(path) {
