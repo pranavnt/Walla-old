@@ -9,23 +9,27 @@ export class Walla {
 	}
 
 	get(route, fn) {
-		console.log();
-		if (Router.matchRoute(route))
+		console.log("GET request");
+		this.router.addRoute("GET", route, fn);
 	}
 
 	post(route, fn) {
-		console.log();
+		console.log("POST request");
+		this.router.addRoute("POST", route, fn);
 	}
 
 	put(route, fn) {
-		console.log();
+		console.log("PUT request");
+		this.router.addRoute("PUT", route, fn);
 	}
 
 	setPlaygroundRoute(playgroundRoute) {
 		this.playgroundRoute = playgroundRoute;
 	}
 
-	listen() {
-		console.log("App running at ______");
+	listen(PORT) {
+		// create http server and that stuff
+
+		console.log(`App running at ${PORT}`);
 	}
 }
