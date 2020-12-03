@@ -1,6 +1,6 @@
-# Walla - UNDER ACTIVE DEVELOPMENT (Unusable rn)
+# Walla - UNDER ACTIVE DEVELOPMENT 
 
-🦘 Walla is an intuitive, fast web framework for building APIs in Node
+🦘 Walla is an intuitive, fast web framework for building APIs in Node. 
 
 ## Installation
 
