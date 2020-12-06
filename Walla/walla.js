@@ -1,6 +1,4 @@
 const Router = require("./router/Router").Router;
-const Route = require("./router/Route").Route;
-const Layer = require("./router/Layer").Layer;
 const http = require("http");
 
 export class Walla {
@@ -29,7 +27,6 @@ export class Walla {
 
 	listen(PORT) {
 		// create http server and that stuff
-
-		console.log(`App running at ${PORT}`);
+		console.log(`App running at ${PORT}...`);
 	}
 }

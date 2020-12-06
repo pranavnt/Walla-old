@@ -6,10 +6,12 @@ export class Router {
 		this.routes = [];
 	}
 
-	handleRequest(method, route, fn) {}
+	handleRequest(method, route, fn) {
+		// handles request to router
+	}
 
 	addRoute(method, route, fn) {
-		if (this.isInRoutes(route) == false) {
+		if (this.isInRoutes(route) == true) {
 			const newRoute = new Route();
 
 			if (newRoute.canHandleMethod("GET")) {
@@ -31,7 +33,7 @@ export class Router {
 	isInRoutes(route) {
 		for (var i = 0; i < this.routes.length; i++) {
 			if (this.routes[i].path == route) {
-				return i;
+				return true;
 			}
 		}
 		return false;

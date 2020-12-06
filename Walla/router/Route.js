@@ -10,7 +10,7 @@ export class Route {
 	canHandleMethod(method) {
 		for (var i = 0; i < this.stack.length; i++) {
 			if (this.stack[i].method == method) {
-				return true;
+				return this.stack[i];
 			}
 		}
 		return false;
